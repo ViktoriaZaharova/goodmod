@@ -191,6 +191,21 @@
   .container
     padding: 0 48px
 
+  .modal__div
+    .modal__wrapper
+      max-width: none
+      width: 98%
+      padding: 40px 30px
+      h2
+        font-size: 28px
+    .modal__close
+      right: 10px
+      top: 10px
+      width: 20px
+      height: 20px
+      img
+        filter: invert(1)
+
 @media only screen and (max-width: 768px)
 
   main
@@ -355,10 +370,17 @@
   .to-establish
     padding: 40px 0
 
+  .modal__div h6
+    font-size: 18px
+    letter-spacing: 1px
+
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 360px)
-  .registration h3
+  .registration h3, .modal__div .modal__wrapper h2
     font-size: 22px
+
+  .modal__div .modal__wrapper h2
+    letter-spacing: 2px
 
   .form button
     width: 100%
